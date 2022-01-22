@@ -1,0 +1,10 @@
+---
+- name: git installation
+  hosts: localhost
+  remote_user: root
+
+  tasks: 
+  - name: git 
+    yum:
+     name: git-all
+     state: present 
